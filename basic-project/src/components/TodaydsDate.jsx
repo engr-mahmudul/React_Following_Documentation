@@ -1,14 +1,16 @@
+/* eslint-disable react/prop-types */
 const today = new Date();
 
 function formatDate(date) {
-  return new Intl.DateTimeFormat(
-    'en-US',
-    { weekday: 'long' }
-  ).format(date);
+  return new Intl.DateTimeFormat("en-US", { weekday: "long" }).format(date);
 }
 
-export default function TodaysDate() {
+export default function TodaysDate({ firstProp, secondProp }) {
   return (
-    <h1>To Do List for {formatDate(today)}</h1>
+    <>
+      <p>First Prop:{firstProp}</p>
+      <p>Second Prop's value:{secondProp.a}</p>
+      {formatDate(today)}
+    </>
   );
 }

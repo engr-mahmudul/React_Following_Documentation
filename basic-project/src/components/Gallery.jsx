@@ -1,11 +1,12 @@
-import Profile from "./Profile";
 
-const Gallery = () => {
+
+const Gallery = ({children}) => {
   return (
     <>
-      <Profile />
-      <Profile />
-      <Profile />
+     {children}
+     {children}
+     {children}
+     {children}
     </>
   );
 };

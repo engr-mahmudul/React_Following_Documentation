@@ -14,13 +14,19 @@ const componentStyle = {
 };
 
 const App = () => {
+  const objeC = {
+    a: 5,
+    b: 5,
+  };
   return (
-    <div style={componentStyle.appearance,componentStyle.spacing}>
-      <Gallery />
+    <div style={(componentStyle.appearance, componentStyle.spacing)}>
+      <Gallery>
+        <Avatar />
+      </Gallery>
       <p className="photo">Bellow is named export component</p>
       <NamedExport />
-      <Avatar />
-      <TodaysDate />
+
+      <TodaysDate firstProp="Testing Prop Data" secondProp={objeC} />
     </div>
   );
 };
