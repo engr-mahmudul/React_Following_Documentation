@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 function Item({ name, isPacked }) {
   let listContent = <li>{name}</li>;
   if (isPacked) {
