@@ -1,9 +1,10 @@
 function Item({ name, isPacked }) {
-  return (
-    <li>
-      {name} {isPacked && "✅"}
-    </li>
-  );
+  let listContent = <li>{name}</li>;
+  if (isPacked) {
+    listContent = <li>{name} ✅</li>;
+  }
+
+  return listContent;
 }
 
 export default function PackingList() {
