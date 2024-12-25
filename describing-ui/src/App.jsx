@@ -1,5 +1,6 @@
 import Avatar from "./components/Avatar";
 import Gallery from "./components/Gallery";
+import PackingList from "./components/PackingList";
 import { NamedExport } from "./components/Profile";
 import TodaysDate from "./components/TodaydsDate";
 
@@ -27,6 +28,7 @@ const App = () => {
       <NamedExport />
 
       <TodaysDate firstProp="Testing Prop Data" secondProp={objeC} />
+      <PackingList />
     </div>
   );
 };
