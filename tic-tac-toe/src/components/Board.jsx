@@ -17,8 +17,17 @@ export default function Board() {
   const [xIsNext, setXIsNext] = useState(true);
   const a = Array.from({ length: 9 }, (_, i) => i);
 
+  let winner = calculateWinner(squares);
+  let status;
+  //winner checking and Turn status updating
+  if (winner) {
+    status = `Winner is ${winner}`;
+  } else {
+    status = xIsNext ? "Next turn is for X" : "Next turn is for O";
+  }
+  // handler function
   const handleSquareClick = (index) => {
-    if (squares[index]) {
+    if (squares[index] || winner != null) {
       return;
     }
     const newSquares = [...squares];
@@ -31,14 +40,37 @@ export default function Board() {
     setXIsNext(!xIsNext);
   };
   return (
-    <div className="grid grid-cols-3 gap-0 w-40">
-      {a.map((i) => (
-        <Square
-          value={squares[i]}
-          key={i}
-          setSquaresValue={() => handleSquareClick(i)}
-        />
-      ))}
-    </div>
+    <>
+      <h3>{status}</h3>
+      <div className="grid grid-cols-3 gap-0 w-40">
+        {a.map((i) => (
+          <Square
+            value={squares[i]}
+            key={i}
+            setSquaresValue={() => handleSquareClick(i)}
+          />
+        ))}
+      </div>
+    </>
   );
+}
+
+function calculateWinner(squares) {
+  const lines = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  for (let i = 0; i < lines.length; i++) {
+    const [a, b, c] = lines[i];
+    if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
+      return squares[a];
+    }
+  }
+  return null;
 }
