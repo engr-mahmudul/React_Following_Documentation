@@ -1,9 +1,12 @@
-import SimpleButton from "./components/SimpleButton";
+import Toolbar from "./components/EventPropagation";
+import Signup from "./components/Form";
 
 export default function App() {
   return (
     <>
-      <SimpleButton />
+      {/* <SimpleButton /> */}
+      <Toolbar />
+      <Signup />
     </>
   );
 }
