@@ -36,11 +36,15 @@ export default function UseStateHook() {
               setBatchUpdater(batchUpdater + 1);
             }}
           >
-            Increase with Updater
+            Increase with Batch Updater
           </button>
         </div>
         <div
-          style={{ margin: "20px", border: "3px solid black", padding: "10px" }}
+          style={{
+            margin: "20px",
+            border: "3px solid black",
+            padding: "10px",
+          }}
         >
           <p>{updater}</p>
           <button

@@ -1,5 +1,6 @@
 import Toolbar from "./components/EventPropagation";
 import Signup from "./components/Form";
+import ObjectInState from "./components/ObjectInState";
 import UseStateHook from "./components/UseStateHook";
 
 export default function App() {
@@ -9,6 +10,7 @@ export default function App() {
       <Toolbar />
       <Signup />
       <UseStateHook />
+      <ObjectInState />
     </>
   );
 }
