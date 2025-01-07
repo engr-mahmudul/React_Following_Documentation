@@ -59,7 +59,7 @@ export default function ObjectInState() {
       <input
         type="email"
         placeholder="Email"
-        value={person.email}
+        value={person.contact.email}
         onChange={(e) =>
           setPerson({
             ...person,
