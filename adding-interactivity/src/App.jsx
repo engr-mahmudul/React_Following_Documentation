@@ -1,18 +1,16 @@
-import Toolbar from "./components/EventPropagation";
-import Signup from "./components/Form";
-import ObjectInState from "./components/ObjectInState";
+import ArrayState from "./components/ArrayState";
 import ObjectInState2 from "./components/ObjectInState2";
-import UseStateHook from "./components/UseStateHook";
 
 export default function App() {
   return (
     <>
       {/* <SimpleButton /> */}
-      <Toolbar />
+      {/* <Toolbar />
       <Signup />
       <UseStateHook />
-      <ObjectInState />
+      <ObjectInState /> */}
       <ObjectInState2 />
+      <ArrayState />
     </>
   );
 }
