@@ -1,5 +1,4 @@
-import ArrayState from "./components/ArrayState";
-import ObjectInState2 from "./components/ObjectInState2";
+import TransformingArrayState from "./components/TransformingArrayState";
 
 export default function App() {
   return (
@@ -9,8 +8,10 @@ export default function App() {
       <Signup />
       <UseStateHook />
       <ObjectInState /> */}
-      <ObjectInState2 />
+      {/* <ObjectInState2 />
       <ArrayState />
+      <RemovingFromArray /> */}
+      <TransformingArrayState />
     </>
   );
 }

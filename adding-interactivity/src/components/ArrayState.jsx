@@ -5,7 +5,7 @@ let nextId = 0;
 export default function ArrayState() {
   const [name, setName] = useState("");
   const [artists, setArtists] = useState([]);
-  console.log(name);
+  //   console.log(name);
 
   return (
     <>
