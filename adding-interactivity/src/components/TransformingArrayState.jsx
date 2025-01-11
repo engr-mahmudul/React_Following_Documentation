@@ -27,7 +27,7 @@ export default function TransformingArrayState() {
   }
 
   return (
-    <>
+    <div style={{ position: "relative" }}>
       <button onClick={handleClick}>Move circles down!</button>
       {shapes.map((shape) => (
         <div
@@ -43,6 +43,6 @@ export default function TransformingArrayState() {
           }}
         />
       ))}
-    </>
+    </div>
   );
 }
