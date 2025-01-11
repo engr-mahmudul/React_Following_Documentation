@@ -22,7 +22,7 @@ export default function ReplacingItemofArray() {
     <ul
       style={{
         borderTop: "3px solid black",
-        marginTop: "30px",
+        paddingTop: "30px",
       }}
     >
       {counters.map((counter, i) => (

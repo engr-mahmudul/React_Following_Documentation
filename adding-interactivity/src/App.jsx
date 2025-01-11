@@ -1,3 +1,4 @@
+import InsertingIntoArray from "./components/InsertingIntoArray";
 import ReplacingItemofArray from "./components/ReplacingItemofArray";
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
       {/* <TransformingArrayState />
       <RemovingFromArray /> */}
       <ReplacingItemofArray />
+      <InsertingIntoArray />
     </div>
   );
 }
