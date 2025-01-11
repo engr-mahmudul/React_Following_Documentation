@@ -1,5 +1,7 @@
 import InsertingIntoArray from "./components/InsertingIntoArray";
+import OtherChangesInArray from "./components/OtherChangesInArray";
 import ReplacingItemofArray from "./components/ReplacingItemofArray";
+import UpdatingObjectInsideArray from "./components/UpdatingObjectInsideArray";
 
 export default function App() {
   return (
@@ -16,6 +18,8 @@ export default function App() {
       <RemovingFromArray /> */}
       <ReplacingItemofArray />
       <InsertingIntoArray />
+      <OtherChangesInArray />
+      <UpdatingObjectInsideArray />
     </div>
   );
 }

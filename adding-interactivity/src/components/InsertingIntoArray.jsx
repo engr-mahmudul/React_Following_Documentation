@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-let nextId = 3;
 const initialArtists = [
   { id: 0, name: "Marta Colvin Andrade" },
   { id: 1, name: "Lamidi Olonade Fakeye" },
@@ -12,7 +11,7 @@ export default function InsertingIntoArray() {
   const [artists, setArtists] = useState(initialArtists);
 
   function handleClick() {
-    const copyOfArtist = artists.map((artist) => artist);
+    const copyOfArtist = artists.map((artist) => ({ ...artist }));
     const updatedIndex = artists.length;
     const nextArtists = [...copyOfArtist, { id: updatedIndex, name: name }];
     setArtists(nextArtists);
