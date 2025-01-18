@@ -1,10 +1,11 @@
-import MovingDot from "./components/MovingDot";
+import DynamicState from "./components/DynamicState";
 
 export default function App() {
   return (
     <>
       {/* <Form /> */}
-      <MovingDot />
+      {/* <MovingDot /> */}
+      <DynamicState />
     </>
   );
 }
